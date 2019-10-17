@@ -68,7 +68,7 @@ func main() {
   // rpc.Register(house);
   
   // rpc.HandleHTTP();
-  listener, e := net.Listen("tcp", "localhost:8080");
+  listener, e := net.Listen("tcp", "0.0.0.0:8080");
   if e != nil {
     log.Fatal("Listen error : ", e);
   }
