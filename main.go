@@ -68,11 +68,11 @@ func main() {
   // rpc.Register(house);
   
   // rpc.HandleHTTP();
-  listener, e := net.Listen("tcp", "localhost:1234");
+  listener, e := net.Listen("tcp", "localhost:8080");
   if e != nil {
     log.Fatal("Listen error : ", e);
   }
-  log.Printf("Starting server on port 1234");
+  log.Printf("Starting server on port 8080");
 
   server := rpc.NewServer();
   server.Register(house);
